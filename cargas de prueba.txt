@@ -1,0 +1,117 @@
+SELECT * FROM departamentorrhh.empleado;
+INSERT INTO `departamentorrhh`.`empleado` (`emp_nombre`, `emp_apellido`, `emp_cedula`, `emp_telefono`, `emp_correo`, `emp_nacionalidad`, `emp_fechanacimiento`, `emp_tiposangre`, `emp_tipogenero`, `emp_tipoetnia`, `emp_tipousuario`, `emp_usuario`, `emp_contrasñea`, `emp_declaracionbienes`, `emp_antservpublico`) VALUES ('Amaya', 'Luna', '1782346521', '0934682156', 'amaya123@gmail.com', 'ecuatoriana', '2001-08-31', 'o+', 'femenino', 'mestiza', 'docente', 'amaya', 'amaya12', '2023-12-17', '2023-12-20');
+INSERT INTO `departamentorrhh`.`empleado` (`emp_nombre`, `emp_apellido`, `emp_cedula`, `emp_telefono`, `emp_correo`, `emp_nacionalidad`, `emp_fechanacimiento`, `emp_tiposangre`, `emp_tipogenero`, `emp_tipoetnia`, `emp_tipousuario`, `emp_usuario`, `emp_contrasñea`, `emp_declaracionbienes`, `emp_antservpublico`) VALUES ('Camila', 'Guaman', '1747786452', '0917289346', 'camila123@gmail.com', 'ecuatoriana', '2001-10-11', 'b+', 'femenino', 'mestiza', 'docente', 'camila', 'cami123', '2023-12-20', '2023-12-30');
+INSERT INTO `departamentorrhh`.`empleado` (`emp_nombre`, `emp_apellido`, `emp_cedula`, `emp_telefono`, `emp_correo`, `emp_nacionalidad`, `emp_fechanacimiento`, `emp_tiposangre`, `emp_tipogenero`, `emp_tipoetnia`, `emp_tipousuario`, `emp_usuario`, `emp_contrasñea`, `emp_declaracionbienes`, `emp_antservpublico`) VALUES ('Javier', 'Meneces', '1785447796', '0917282893', 'javier@gmail.com', 'ecuatoriano', '2001-05-11', 'a+', 'masculino', 'blanco', 'docente', 'javi', 'Javi', '2023-12-13', '2023-12-10');
+/*copoar*/
+INSERT INTO `departamentorrhh`.`empleado` (`emp_nombre`, `emp_apellido`, `emp_cedula`, `emp_telefono`, `emp_correo`, `emp_nacionalidad`, `emp_fechanacimiento`, `emp_tiposangre`, `emp_tipogenero`, `emp_tipoetnia`, `emp_tipousuario`, `emp_usuario`, `emp_contrasñea`, `emp_declaracionbienes`, `emp_antservpublico`) VALUES ('Samir', 'Shiguango', '1712345678', '0912345378', 'samiariel@gmail.com', 'ecuatoriano', '2001-11-08', 'o+', 'masculino', 'mestizo', 'docente', 'samir', 'samir', '2023-12-21', '2023-12-30');
+
+SELECT * FROM departamentorrhh.asistencia;
+INSERT INTO `departamentorrhh`.`asistencia` (`asis_horaentrada`, `asis_fecha`, `asis_cargo`, `asis_horasalida`, `asis_observacion`, `empleado_id_dempleado`) VALUES ('11:58', '2023-12-19', 'docente', '22:30', 'ninguna', '1');
+INSERT INTO `departamentorrhh`.`asistencia` (`asis_horaentrada`, `asis_fecha`, `asis_cargo`, `asis_horasalida`, `asis_observacion`, `empleado_id_dempleado`) VALUES ('12:30', '2023-12-20', 'docente', '22:30', 'ninguna', '2');
+INSERT INTO `departamentorrhh`.`asistencia` (`asis_horaentrada`, `asis_fecha`, `asis_cargo`, `asis_horasalida`, `asis_observacion`, `empleado_id_dempleado`) VALUES ('13:10', '2023-12-21', 'docente', '22:30', 'ninguna', '3');
+/*copoar*/
+INSERT INTO `departamentorrhh`.`asistencia` (`asis_horaentrada`, `asis_fecha`, `asis_cargo`, `asis_horasalida`, `asis_observacion`, `empleado_id_dempleado`) VALUES ('14:10', '2024-01-01', 'docente', '22:30', 'ninguna', '4');
+
+
+SELECT * FROM departamentorrhh.capacitaciones;
+INSERT INTO `departamentorrhh`.`capacitaciones` (`cap_nombrevento`, `cap_tipo`, `cap_auspiciante`, `cap_fechainicio`, `cap_institucion`, `cap_fechafinal`, `cap_duracionhoras`, `cap_tipocertificado`, `empleado_id_dempleado`) VALUES ('programacion web', 'curso', 'Harbard', '2023-12-17', 'universidad', '2023-12-18', '10', 'programacion', '1');
+INSERT INTO `departamentorrhh`.`capacitaciones` (`id_capacitaciones`, `cap_nombrevento`, `cap_tipo`, `cap_auspiciante`, `cap_fechainicio`, `cap_institucion`, `cap_fechafinal`, `cap_duracionhoras`, `cap_tipocertificado`, `empleado_id_dempleado`) VALUES ('2','cursored', 'en linea', 'Sydney', '2023-12-18', 'universidad', '2023-12-19', '5', 'redes', '2');
+INSERT INTO `departamentorrhh`.`capacitaciones` (`id_capacitaciones`, `cap_nombrevento`, `cap_tipo`, `cap_auspiciante`, `cap_fechainicio`, `cap_institucion`, `cap_fechafinal`, `cap_duracionhoras`, `cap_tipocertificado`, `empleado_id_dempleado`) VALUES ('3', 'hacks', 'curso', 'quenslaind', '2023-12-19', 'universidad', '2023-12-20', '4', 'hacks', '3');
+/*copoar*/
+INSERT INTO `departamentorrhh`.`capacitaciones` (`id_capacitaciones`, `cap_nombrevento`, `cap_tipo`, `cap_auspiciante`, `cap_fechainicio`, `cap_institucion`, `cap_fechafinal`, `cap_duracionhoras`, `cap_tipocertificado`, `empleado_id_dempleado`) VALUES ('4', 'redweb', 'curso', 'U.T.N', '2023-12-20', 'universidad', '2023-12-21', '12', 'redweb', '4');
+
+
+SELECT * FROM departamentorrhh.capasidades_especiales;
+INSERT INTO `departamentorrhh`.`capasidades_especiales` (`id_capasidadesespeciales`, `cap_tipoenfermedad`, `cap_tiporelacion`, `cap_nroconadis`, `cap_certificado_enfermedad`, `empleado_id_dempleado`) VALUES ('1', 'movilidad reducida', 'dificultad para moverse', '45', 'discfisica', '1');
+INSERT INTO `departamentorrhh`.`capasidades_especiales` (`id_capasidadesespeciales`, `cap_tipoenfermedad`, `cap_tiporelacion`, `cap_nroconadis`, `cap_certificado_enfermedad`, `empleado_id_dempleado`) VALUES ('2', 'visual', 'perdoda parcial', '15', 'discsensorial', '2');
+INSERT INTO `departamentorrhh`.`capasidades_especiales` (`id_capasidadesespeciales`, `cap_tipoenfermedad`, `cap_tiporelacion`, `cap_nroconadis`, `cap_certificado_enfermedad`, `empleado_id_dempleado`) VALUES ('3', 'auditiva', 'perdida de audicion', '40', 'discsensorial', '3');
+/*copoar*/
+INSERT INTO `departamentorrhh`.`capasidades_especiales` (`id_capasidadesespeciales`, `cap_tipoenfermedad`, `cap_tiporelacion`, `cap_nroconadis`, `cap_certificado_enfermedad`, `empleado_id_dempleado`) VALUES ('4', 'intelectual', 'limita habilidades', '10', 'disccognitiva', '4');
+
+
+SELECT * FROM departamentorrhh.contactoemergencia;
+INSERT INTO `departamentorrhh`.`contactoemergencia` (`cont_nombres`, `cont_apellidos`, `cont_telefono`, `empleado_id_dempleado`) VALUES ('Erick', 'Casamen', '0987563152', '1');
+INSERT INTO `departamentorrhh`.`contactoemergencia` (`cont_nombres`, `cont_apellidos`, `cont_telefono`, `empleado_id_dempleado`) VALUES ('Leonardo', 'Angamarca', '0917284693', '2');
+INSERT INTO `departamentorrhh`.`contactoemergencia` (`cont_nombres`, `cont_apellidos`, `cont_telefono`, `empleado_id_dempleado`) VALUES ('Andrea', 'Meneces', '0917729346', '3');
+/*copoar*/
+INSERT INTO `departamentorrhh`.`contactoemergencia` (`cont_nombres`, `cont_apellidos`, `cont_telefono`, `empleado_id_dempleado`) VALUES ('Crolina', 'Tepes', '0912365478', '4');
+
+
+SELECT * FROM departamentorrhh.conyugue;
+INSERT INTO `departamentorrhh`.`conyugue` (`cony_nombres`, `cony_apellidos`, `cony_tiporelacion`, `empleado_id_dempleado`) VALUES ('Diana', 'Masabanda', 'hermana', '1');
+INSERT INTO `departamentorrhh`.`conyugue` (`cony_nombres`, `cony_apellidos`, `cony_tiporelacion`, `empleado_id_dempleado`) VALUES ('Daniel', 'Balcazar', 'hermano', '2');
+INSERT INTO `departamentorrhh`.`conyugue` (`cony_nombres`, `cony_apellidos`, `cony_tiporelacion`, `empleado_id_dempleado`) VALUES ('Mercedes', 'Lopez', '´hermana', '3');
+/*copoar*/
+INSERT INTO `departamentorrhh`.`conyugue` (`cony_nombres`, `cony_apellidos`, `cony_tiporelacion`, `empleado_id_dempleado`) VALUES ('Marcelo', 'Mendoza', '´hermano', '4');
+
+
+
+SELECT * FROM departamentorrhh.descendientes;
+INSERT INTO `departamentorrhh`.`descendientes` (`des_nombres`, `des_apellidos`, `des_nivelinstitucional`, `empleado_id_dempleado`) VALUES ('Gonzalo', 'Capos', 'institucional', '1');
+INSERT INTO `departamentorrhh`.`descendientes` (`des_nombres`, `des_apellidos`, `des_nivelinstitucional`, `empleado_id_dempleado`) VALUES ('Danilo', 'Cabezas', 'institucional', '2');
+INSERT INTO `departamentorrhh`.`descendientes` (`des_nombres`, `des_apellidos`, `des_nivelinstitucional`, `empleado_id_dempleado`) VALUES ('Carlos', 'Sosa', 'institucional', '3');
+/*copoar*/
+INSERT INTO `departamentorrhh`.`descendientes` (`des_nombres`, `des_apellidos`, `des_nivelinstitucional`, `empleado_id_dempleado`) VALUES ('Diego', 'Cevallos', 'institucional', '4');
+
+
+
+SELECT * FROM departamentorrhh.direccion;
+INSERT INTO `departamentorrhh`.`direccion` (`dir_callePrincipal`, `dir_No`, `dir_callleSecundaria`, `dir_referencia`, `dir_telefonoDomicilio`, `dir_correoElectronico`, `dir_provincia`, `dir_canton`, `dir_parroquial`, `empleado_id_dempleado`) VALUES ('principal', '7', 'olmedo', 'florida', '093265421', 'daniela123@j,ail-com', 'pichincha', 'cayambe', 'los riios', '1');
+INSERT INTO `departamentorrhh`.`direccion` (`dir_callePrincipal`, `dir_No`, `dir_callleSecundaria`, `dir_referencia`, `dir_telefonoDomicilio`, `dir_correoElectronico`, `dir_provincia`, `dir_canton`, `dir_parroquial`, `empleado_id_dempleado`) VALUES ('independencia', '98', 'juanmontalvo', 'tanques', '0917284934', 'juan223@j,ail-com', 'loma', 'cayambe', 'cangahua', '2');
+INSERT INTO `departamentorrhh`.`direccion` (`dir_callePrincipal`, `dir_No`, `dir_callleSecundaria`, `dir_referencia`, `dir_telefonoDomicilio`, `dir_correoElectronico`, `dir_provincia`, `dir_canton`, `dir_parroquial`, `empleado_id_dempleado`) VALUES ('floor', '12', 'quito', 'chillo', '0911442253', 'esmeralda111@j,ail-com', 'sindereya', 'quito', 'barriochillo', '3');
+/*copoar*/
+INSERT INTO `departamentorrhh`.`direccion` (`dir_callePrincipal`, `dir_No`, `dir_callleSecundaria`, `dir_referencia`, `dir_telefonoDomicilio`, `dir_correoElectronico`, `dir_provincia`, `dir_canton`, `dir_parroquial`, `empleado_id_dempleado`) VALUES ('olmedo', '13', 'cayambe', 'pichincha', '0917283964', 'leo@j,ail-com', 'cloores', 'cayambe', 'barrioesme', '4');
+
+
+SELECT * FROM departamentorrhh.evalucacion_docente;
+INSERT INTO `departamentorrhh`.`evalucacion_docente` (`eval_fechainicio`, `eval_fechafinal`, `eval_NombreInstitucion`, `eval_puntaje`, `eval_calificacion`, `eval_observacion`, `empleado_id_dempleado`) VALUES ('2023-12-12', '2023-10-10', 'INT', '99', '9', 'ninguna', '1');
+
+INSERT INTO `departamentorrhh`.`evalucacion_docente` (`eval_fechainicio`, `eval_fechafinal`, `eval_NombreInstitucion`, `eval_puntaje`, `eval_calificacion`, `eval_observacion`, `empleado_id_dempleado`) VALUES ('2023-12-12', '2023-12-10', 'UTN', '100', '10', 'ninguna', '2');
+
+
+
+SELECT * FROM departamentorrhh.formacionacademica;
+INSERT INTO `departamentorrhh`.`formacionacademica` (`form_nrocertsenecyt`, `form_institucioneducativa`, `form_areaconocimiento`, `form_nivelinstruccion`, `form_pais`, `form_añosaprovados`, `form_egresado_graduado`, `empleado_id_dempleado`) VALUES ('14', 'Harbard', 'programacion', 'institucional', 'california', '3', 'graduado', '1');
+INSERT INTO `departamentorrhh`.`formacionacademica` (`form_nrocertsenecyt`, `form_institucioneducativa`, `form_areaconocimiento`, `form_nivelinstruccion`, `form_pais`, `form_añosaprovados`, `form_egresado_graduado`, `empleado_id_dempleado`) VALUES ('14', 'UTN', 'calidad de software', 'institucional', 'ecuador', '5', 'graduado', '2');
+INSERT INTO `departamentorrhh`.`formacionacademica` (`form_nrocertsenecyt`, `form_institucioneducativa`, `form_areaconocimiento`, `form_nivelinstruccion`, `form_pais`, `form_añosaprovados`, `form_egresado_graduado`, `empleado_id_dempleado`) VALUES ('14', 'montereal', 'tendencias', 'institucional', '', '10', 'egresado', '3');
+/*copoar*/
+INSERT INTO `departamentorrhh`.`formacionacademica` (`form_nrocertsenecyt`, `form_institucioneducativa`, `form_areaconocimiento`, `form_nivelinstruccion`, `form_pais`, `form_añosaprovados`, `form_egresado_graduado`, `empleado_id_dempleado`) VALUES ('14', 'denmark', 'redes', 'institucional', 'noruega', '12', 'egresado', '4');
+
+SELECT * FROM departamentorrhh.inclucion_laboral;
+INSERT INTO `departamentorrhh`.`inclucion_laboral` (`incl_migrante`, `incl_nacionalidad`, `incl_embarazo`, `incl_mesesDeEmbarazo`, `incl_licencia`, `incl_porcentaje`, `empleado_id_dempleado`) VALUES ('no hay', 'ecuatoriano', 'no hay', 'no hay', '1', '1', '1');
+INSERT INTO `departamentorrhh`.`inclucion_laboral` (`incl_migrante`, `incl_nacionalidad`, `incl_embarazo`, `incl_mesesDeEmbarazo`, `incl_licencia`, `incl_porcentaje`, `empleado_id_dempleado`) VALUES ('es migrante', 'londres', 'si', '3meses', '30', '20', '2');
+INSERT INTO `departamentorrhh`.`inclucion_laboral` (`incl_migrante`, `incl_nacionalidad`, `incl_embarazo`, `incl_mesesDeEmbarazo`, `incl_licencia`, `incl_porcentaje`, `empleado_id_dempleado`) VALUES ('no hay', 'ecuatoriano', 'no hay', 'no hay', '0', '0', '3');
+/*copoar*/
+INSERT INTO `departamentorrhh`.`inclucion_laboral` (`incl_migrante`, `incl_nacionalidad`, `incl_embarazo`, `incl_mesesDeEmbarazo`, `incl_licencia`, `incl_porcentaje`, `empleado_id_dempleado`) VALUES ('no hay', 'ecuatoriano', 'no hay', 'no hay', '3', '5', '4');
+
+
+SELECT * FROM departamentorrhh.informacionbancaria;
+INSERT INTO `departamentorrhh`.`informacionbancaria` (`inf_nrocuenta`, `inf_tipocuenta`, `inf_insfinanciera`, `empleado_id_dempleado`) VALUES ('1854249624', 'ahorro', 'INT', '1');
+INSERT INTO `departamentorrhh`.`informacionbancaria` (`inf_nrocuenta`, `inf_tipocuenta`, `inf_insfinanciera`, `empleado_id_dempleado`) VALUES ('1772284596', 'ahorro', 'pichincha', '2');
+INSERT INTO `departamentorrhh`.`informacionbancaria` (`inf_nrocuenta`, `inf_tipocuenta`, `inf_insfinanciera`, `empleado_id_dempleado`) VALUES ('1454575878', 'ahorro', 'internacional', '3');
+/*copiar*/
+INSERT INTO `departamentorrhh`.`informacionbancaria` (`inf_nrocuenta`, `inf_tipocuenta`, `inf_insfinanciera`, `empleado_id_dempleado`) VALUES ('1144778852', 'ahorro', 'produbanco', '4');
+
+SELECT * FROM departamentorrhh.permisos;
+INSERT INTO `departamentorrhh`.`permisos` (`per_empleados`, `per_provincia`, `per_horas`, `per_direccionunidad`, `per_fechainicio`, `per_cordicionacionzonal`, `per_regimen`, `per_motivo`, `per_tipomotivo`, `per_otros`, `per_fechafinal`, `per_valordescontar`, `per_observaciones`, `empleado_id_dempleado`) VALUES ('docente', 'pichincha', '15:20:00', 'cayambe', '2023-12-23', 'INT', 'docente', 'enfermedad', 'leve', 'ninguno', '2023-12-24', '10', 'ninguna', '1');
+INSERT INTO `departamentorrhh`.`permisos` (`per_empleados`, `per_provincia`, `per_horas`, `per_direccionunidad`, `per_fechainicio`, `per_cordicionacionzonal`, `per_regimen`, `per_motivo`, `per_tipomotivo`, `per_otros`, `per_fechafinal`, `per_valordescontar`, `per_observaciones`, `empleado_id_dempleado`) VALUES ('docente', 'quito', '19:20:00', 'quito', '2023-12-24', 'UTN', 'docente', 'enfermedad', 'leve', 'ninguno', '2023-12-25', '15', 'ninguna', '2');
+
+
+
+SELECT * FROM departamentorrhh.rutalaboral;
+INSERT INTO `departamentorrhh`.`rutalaboral` (`ruta_nombre`, `ruta_tipoinstituional`, `ruta_unidadadministrativa`, `ruta_fechaingreso`, `ruta_tipoingreso`, `ruta_demonicacionpuesto`, `ruta_fechasalida`, `ruta_motivosalida`, `empleado_id_dempleado`) VALUES ('Pedro', 'institucion educativa', 'RRHH', '2023-12-19', 'docente', 'servidor publico', '2023-01-01', 'cambio', '1');
+INSERT INTO `departamentorrhh`.`rutalaboral` (`ruta_nombre`, `ruta_tipoinstituional`, `ruta_unidadadministrativa`, `ruta_fechaingreso`, `ruta_tipoingreso`, `ruta_demonicacionpuesto`, `ruta_fechasalida`, `ruta_motivosalida`, `empleado_id_dempleado`) VALUES ('Pedro', 'institucion educativa', 'RRHH', '2023-12-20', 'docente', 'secretaria', '0000-00-00', 'ninguno', '2');
+INSERT INTO `departamentorrhh`.`rutalaboral` (`ruta_nombre`, `ruta_tipoinstituional`, `ruta_unidadadministrativa`, `ruta_fechaingreso`, `ruta_tipoingreso`, `ruta_demonicacionpuesto`, `ruta_fechasalida`, `ruta_motivosalida`, `empleado_id_dempleado`) VALUES ('Pedro', 'institucion educativa', 'RRHH', '2023-12-21', 'docente', 'servidor publico', '0000-00-00', 'cambio', '3');
+
+/*copiar*/
+INSERT INTO `departamentorrhh`.`rutalaboral` (`ruta_nombre`, `ruta_tipoinstituional`, `ruta_unidadadministrativa`, `ruta_fechaingreso`, `ruta_tipoingreso`, `ruta_demonicacionpuesto`, `ruta_fechasalida`, `ruta_motivosalida`, `empleado_id_dempleado`) VALUES ('Pedro', 'institucion educativa', 'RRHH', '2023-12-19', 'docente', 'servidor publico', '0000-00-00', 'ninguno', '4');
+
+
+SELECT * FROM departamentorrhh.situacionsenecyt;
+INSERT INTO `departamentorrhh`.`situacionsenecyt` (`sist_unidad`, `sist_fechaingreso`, `sist_modalidad`, `sist_grupocupacional`, `sits_puesto`, `sist_fecha salida`, `empleado_id_dempleado`) VALUES ('instituto', '2023-12-19', 'servidor publico', 'docente', 'docente', '0000-00-00', '1');
+INSERT INTO `departamentorrhh`.`situacionsenecyt` (`sist_unidad`, `sist_fechaingreso`, `sist_modalidad`, `sist_grupocupacional`, `sits_puesto`, `sist_fecha salida`, `empleado_id_dempleado`) VALUES ('instituto', '2023-12-20', 'losep', 'docente', 'docente', '0000-00-00', '2');
+INSERT INTO `departamentorrhh`.`situacionsenecyt` (`sist_unidad`, `sist_fechaingreso`, `sist_modalidad`, `sist_grupocupacional`, `sits_puesto`, `sist_fecha salida`, `empleado_id_dempleado`) VALUES ('instituto', '2023-12-21', 'codigo modalidad', 'docente', 'docente', '0000-00-00', '3');
+
+/*copiar*/
+INSERT INTO `departamentorrhh`.`situacionsenecyt` (`sist_unidad`, `sist_fechaingreso`, `sist_modalidad`, `sist_grupocupacional`, `sits_puesto`, `sist_fecha salida`, `empleado_id_dempleado`) VALUES ('instituto', '2023-12-22', 'losep', 'docente', 'docente', '0000-00-00', '4');
+
